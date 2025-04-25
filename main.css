@@ -1,0 +1,89 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #E0E0E0;
+}
+
+.navbar {
+    background-color: #F8F0E3;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #ffffff;
+    color: #000080;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link:hover {
+    color: #000080;
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2 );
+    transition: transform 0.5s ease;
+}
+
+.section-title {
+    font-family: pacifico, cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2 );
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    text-decoration-style: wavy;
+    text-decoration-skip-ink: auto;
+    text-decoration-skip: ink;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 20px 0;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1 );
+}
+
+#sobre-a-padaria {
+    background-color: #bdbdff;
+}
+
+.text-colored {
+    color: #000080;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color:  #F5F5DC;
+    color: #2a2626;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #000080
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
