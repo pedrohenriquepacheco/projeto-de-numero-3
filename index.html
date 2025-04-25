@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zajuphigipe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top pt-4" id="cabecalho" >
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title" >ZAJUPHIGIPE</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold" >
+                        <a href="#sobre-a-padaria" class="nav-link">
+                            <i class="bi bi-hourglass-split me-1"></i>
+                            Nossa História
+                        </a>
+                    </li >
+                    <li class="nav-item fw-bold" >
+                        <a href="#bebidas" class="nav-link">
+                            <i class="bi bi-cup-hot-fill me-1"></i>
+                            Bebidas
+                        </a>
+                    </li >
+                    <li  class="nav-item fw-bold"  >
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-basket me-1"></i>
+                            Nossos Produtos
+                        </a>
+                    </li >
+                    <li  class="nav-item fw-bold"  >
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-person-lines-fill me-1"></i>
+                            Contato
+                        </a>
+                    </li >
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+    <section id="sobre-a-padaria">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel" >
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000" >
+                    <img src="img/tipos-de-padaria-7d78eb1e.webp" alt="Foto da nossa loja">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000"  >
+                    <img src="img/balcao-de-padaria.webp" alt="Foto da bancada">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"  >
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0" ></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+            </div>
+        </div>
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="img/como-aumentar-o-lucro-de-uma-padaria.webp" class="d-block w-100 rounded"  alt="Foto dos produtos">
+                </div>
+                <div class="col-md-7 mt-3 mt-md-0">
+                    <h2 class="section-title" >Sobre o <sapn class="text-colored">Restaurante</sapn></h2>
+                    <p>Imagine um portal de aromas, pão e baunilha, a "Doce Memória". Mais que um site, um coração familiar de receitas legadas. Pães crocantes, bolos joias, tortas frutadas: arte comestível com paixão. "Doce Memória" resgata sabores, aquece o coração com elegância simples. Explore este lar de aromas, sinta o calor familiar. Tradição e inovação em cada mordida inesquecível. Bem-vindo à excelência familiar, digna das melhores padarias. Sinta-se em casa, o aroma espera.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bebidas" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center mb-5">
+                    Uma Viagem de <span class="text-colored">Sabores</span> 
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <aside class="col-md-2" >
+                <nav class="nav nav-pills flex-column nav-cardapio" >
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#Itália" class="fw-bold text-start nav-link text-colored active">Itália</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#Grécia"  class="fw-bold text-start nav-link text-colored">Grécia</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#França"  class="fw-bold text-start nav-link text-colored">França</button>
+                </nav>
+            </aside>
+            <div class="col-md-10">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="Itália">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/Perguntas-sobre-cafe-espresso-1.jpg">
+                                <h5 class="text-colored fw-bold mt-2" >Espresso</h5>
+                                <p>
+                                    Café curto e concentrado, a base de muitas bebidas italianas.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/cappuccino-caseiro-capa.webp">
+                                <h5 class="text-colored fw-bold mt-2" >Cappuccino</h5>
+                                <p>
+                                    Espresso com leite vaporizado e espuma de leite cremosa, geralmente polvilhado com cacau.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/edicaselatte-macchiato-imagem-barthfotografie--shutterstock--0qfvvbd58a38.webp">
+                                <h5 class="text-colored fw-bold mt-2" >Macchiato</h5>
+                                <p>
+                                    Espresso "manchado" com uma pequena quantidade de leite vaporizado e espuma.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/mocha.webp">
+                                <h5 class="text-colored fw-bold mt-2" >Caffè Latte</h5>
+                                <p>
+                                    Espresso com uma grande quantidade de leite vaporizado e uma fina camada de espuma.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Grécia">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/frape-de-chocolate-4.jpg">
+                                <h5 class="text-colored fw-bold mt-2" >Café Frappé</h5>
+                                <p>
+                                    Café instantâneo batido com gelo e água até formar uma espuma rica e cremosa, adoçado a gosto.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/Web-Wide-top-pink.webp">
+                                <h5 class="text-colored fw-bold mt-2" >Ellinikos Kafes</h5>
+                                <p>
+                                    Café forte e não filtrado, servido com a borra no fundo da xícara.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/suco-de-roma-com-uva.jpeg">
+                                <h5 class="text-colored fw-bold mt-2" >Suco de Romã</h5>
+                                <p>
+                                    Suco natural e refrescante, rico em antioxidantes.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/5-receitas-de-bebidas-energizantes-para-cair-na-folia.jpg">
+                                <h5 class="text-colored fw-bold mt-2" >Água com Limão e Menta</h5>
+                                <p>
+                                    Bebida simples e refrescante para os dias quentes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="França">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/images.jpg">
+                                <h5 class="text-colored fw-bold mt-2" >Café au Lait</h5>
+                                <p>
+                                    Café preto forte misturado com leite quente em partes iguais.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/top-view-hot-chocolate-and-cacao-chips-©-freepik-BD-1200x800.jpg">
+                                <h5 class="text-colored fw-bold mt-2" >Chocolat Chaud</h5>
+                                <p>
+                                    Bebida rica e cremosa feita com chocolate de boa qualidade e leite.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/Presse-agrume-2.jpeg">
+                                <h5 class="text-colored fw-bold mt-2" >Jus d'Orange Pressé</h5>
+                                <p>
+                                    Suco de laranja espremido na hora.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="bebidas/GettyImages-697705870.jpg">
+                                <h5 class="text-colored fw-bold mt-2" >Limonade Artisanale </h5>
+                                <p>
+                                    Limonada feita com limões frescos, açúcar e água, muitas vezes com um toque de hortelã ou outras ervas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Brasil">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="pratos/Pizza-Margherita_1200x800.avif">
+                                <h5 class="text-colored fw-bold mt-2" >Pizza Margherita</h5>
+                                <p>
+                                    A clássica, com molho de tomate San Marzano, mussarela de búfala, manjericão fresco e azeite extra virgem.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="pratos/lasagna-bolognese-4-scaled.webp">
+                                <h5 class="text-colored fw-bold mt-2" >Lasagna alla Bolognese</h5>
+                                <p>
+                                    Camadas de massa fresca, ragu de carne rico e cremoso molho bechamel, gratinada com queijo parmesão.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="pratos/carbonara.webp">
+                                <h5 class="text-colored fw-bold mt-2" >Spaghetti alla Carbonara</h5>
+                                <p>
+                                    Massa fresca com ovos, queijo pecorino romano ralado, guanciale crocante e pimenta preta.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="pratos/risotto-ai-funghi-porcini.jpg">
+                                <h5 class="text-colored fw-bold mt-2" >Risotto ai Funghi Porcini</h5>
+                                <p>
+                                    Arroz arbóreo cremoso cozido com caldo de cogumelos porcini frescos e finalizado com manteiga e parmesão.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+<br>
+    <section id="cardapio" class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-title text-center mb-5">
+                Uma Viagem  <span class="text-colored">Gastronômica</span> 
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <aside class="col-md-2" >
+            <nav class="nav nav-pills flex-column nav-cardapio" >
+                <button type="button" data-bs-toggle="tab" data-bs-target="#Italia" class="fw-bold text-start nav-link text-colored active">Itália</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#Grecia"  class="fw-bold text-start nav-link text-colored">Grécia</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#Franca"  class="fw-bold text-start nav-link text-colored">França</button>
+            </nav>
+        </aside>
+        <div class="col-md-10">
+            <div class="tab-content">
+                <div class="tab-pane active" id="Italia">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/Pizza-Margherita_1200x800.avif">
+                            <h5 class="text-colored fw-bold mt-2" >Pizza Margherita</h5>
+                            <p>
+                                A clássica, com molho de tomate San Marzano, mussarela de búfala, manjericão fresco e azeite extra virgem.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/lasagna-bolognese-4-scaled.webp">
+                            <h5 class="text-colored fw-bold mt-2" >Lasagna alla Bolognese</h5>
+                            <p>
+                                Camadas de massa fresca, ragu de carne rico e cremoso molho bechamel, gratinada com queijo parmesão.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/carbonara.webp">
+                            <h5 class="text-colored fw-bold mt-2" >Spaghetti alla Carbonara</h5>
+                            <p>
+                                Massa fresca com ovos, queijo pecorino romano ralado, guanciale crocante e pimenta preta.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/risotto-ai-funghi-porcini.jpg">
+                            <h5 class="text-colored fw-bold mt-2" >Risotto ai Funghi Porcini</h5>
+                            <p>
+                                Arroz arbóreo cremoso cozido com caldo de cogumelos porcini frescos e finalizado com manteiga e parmesão.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="Grecia">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/DH6ZHS63XBE6RMGPTOGRODNRYA.avif" alt="Moussaka">
+                            <h5 class="text-colored fw-bold mt-2" >Moussaka</h5>
+                            <p>
+                                Camadas de berinjela, carne moída de cordeiro ou boi, molho bechamel cremoso e especiarias, assada até dourar.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/chicken-souvlaki-recipe.jpg" alt="Souvlaki">
+                            <h5 class="text-colored fw-bold mt-2" >Souvlaki</h5>
+                            <p>
+                                Espetinhos de carne de porco, frango ou cordeiro marinados em azeite, limão, orégano e alho, grelhados e servidos com pão pita, tzatziki e tomate.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/Tzatziki-Molho-Grego-de-Iogurte-e-Pepino-1.webp" alt="Tzatziki">
+                            <h5 class="text-colored fw-bold mt-2" >Tzatziki</h5>
+                            <p>
+                                Molho refrescante de iogurte grego, pepino ralado, alho amassado, azeite de oliva e hortelã fresca.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/WEB-Closeup-Side-plate.webp" alt="Spanakopita">
+                            <h5 class="text-colored fw-bold mt-2" >Spanakopita</h5>
+                            <p>
+                                Torta salgada crocante feita com massa filo recheada com espinafre, queijo feta e cebola.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="Franca">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/images.jpg">
+                            <h5 class="text-colored fw-bold mt-2" >Soupe à l'oignon gratinée</h5>
+                            <p>
+                                Sopa de cebola caramelizada em caldo de carne, coberta com fatias de pão e queijo gruyère gratinado.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/sous-vide-boeuf-bourguignon-recept.jpg">
+                            <h5 class="text-colored fw-bold mt-2" >Boeuf Bourguignon</h5>
+                            <p>
+                                Ensopado clássico de carne bovina cozida lentamente em vinho tinto da Borgonha com bacon, cogumelos e cebolinhas.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/iStock-469583525.jpg">
+                            <h5 class="text-colored fw-bold mt-2" >Quiche Lorraine</h5>
+                            <p>
+                                Torta salgada com recheio cremoso de ovos, creme de leite, bacon defumado e queijo gruyère.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="d-block w-100" src="pratos/Croque-Monsieur-81-2.jpg">
+                            <h5 class="text-colored fw-bold mt-2" >Croque Monsieur</h5>
+                            <p>
+                                Sanduíche quente com pão de forma, presunto cozido e queijo gruyère, geralmente coberto com molho bechamel gratinado 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section id="fale-conosco" class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-title text-center"> <section>Fale <span class="text-colored">Conosco</span></section></h2>
+        </div>
+        <div class="row">
+            <div class="col-md-7 mb-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                        <input type="text" id="nome" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nome do produto" class="form-label fw-bold text-colored">Nome do produto</label>
+                        <input type="text" id="nome" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label fw-bold text-colored">Telefone ( Para contato )</label>
+                        <input type="tel" id="telefone" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold text-colored">E-mail</label>
+                        <input type="email" id="nome" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label fw-bold text-colored">Mensagem ( O que você quiser tirar e colocar nos produtos )</label>
+                        <textarea class="form-control" id="mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn fw-bold">Enviar</button>
+                    <h5 class="text-colored fw-bold mt-2">*Complementos seram cobrados*</h5>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <h3 class="section-title fs-4 text-colored" >
+                        <i class="bi bi-chat-right-text"></i>
+                        Nossas redes sociais
+                    </h3>
+                    <ul class="social-links">
+                        <li class="fs-5">
+                            <a href="#">
+                                <i class="bi bi-instagram text-colored"></i>
+                            </a>
+                        </li>
+                        <li class="fs-5 ms-1 me-1">
+                            <a href="#">
+                                <i class="bi bi-facebook text-colored"></i>
+                            </a>
+                        </li>
+                        <li class="fs-5 ms-1 me-1">
+                            <a href="#">
+                                <i class="bi bi-whatsapp text-colored"></i>
+                            </a>
+                        </li>
+                        <li class="fs-5">
+                            <a href="#">
+                                <i class="bi bi-youtube text-colored"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mt-4">
+                    <h3 class="section-title fs-4 text-colored" >
+                        <i class="bi bi-cursor"></i>
+                        Nosso endereço
+                    </h3>
+                    <p>
+                        Rua Teste Exemplo n*145, Bairro Bootstrap - Rondonópolis - MT
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class=" bg-primary text-white text-center py-3">
+    <div class="container">
+        <p>
+            &copy; 2025 Zajuphigipe. Todos os direitos reservados.
+        </p>
+    </div>
+</footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
